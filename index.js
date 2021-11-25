@@ -1,11 +1,9 @@
-const express =require('express')
+const express =require('express');
 const router = express.Router();
-const client = require('./db')()
+const client = require('./db');
 
 router.get('/', (req, res)=> {
-    res.render('main'){
-
-    }
+    res.render('main')
 })
 
 module.exports = router;
