@@ -12,6 +12,8 @@ app.set('view engine', 'ejs')
 app.use(logger('dev'))
 app.use(express.json())
 app.use(bodyParse.urlencoded({extended:false}))
+app.use('/css', express.static(path.join(__dirname, 'src/CSS')))
+app.use('/imagen', express.static(path.join(__dirname, 'src/IMAGEN')))
 
 app.use('/', indexRoutes)
 
